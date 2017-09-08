@@ -39,8 +39,8 @@
 
 ```
 ALERT RoutecontrolHcErrorRate
-  IF host_page_type_status:nginx_http_errors_per_request:rate2m{application="holidaycheck", collector="routecontrol"} > 0.05
-     AND on (host, page_type) sum_over_time(nginx_http_requests_total{instance_name=~"prod-opseng-routecontrol.*", host=~"(.*holidaycheck.*|admin.hc.ag)", status=~"2.."}[6h]) > 0
+  IF nginx_http_errors_per_request:rate2m > 0.05 AND on (host, page_type)
+     sum_over_time(nginx_http_requests_total{status=~"2.."}[6h]) > 0
   FOR 10m
   LABELS {
     severity = "emergency",
@@ -50,3 +50,8 @@ ALERT RoutecontrolHcErrorRate
     summary = "High error rate ({{ $labels.status }}) for {{ $labels.page_type }} on {{ $labels.host }}"
   }
 ```
+@[1]
+@[2-3](alert condition)
+@[4](duration)
+@[5-8](labels are used by alertmanager to route alerts)
+@[9-11](descriptive error message)
