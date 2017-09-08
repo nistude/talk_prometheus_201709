@@ -47,7 +47,8 @@ ALERT RoutecontrolHcErrorRate
     team = "opseng",
   }
   ANNOTATIONS {
-    summary = "High error rate ({{ $labels.status }}) for {{ $labels.page_type }} on {{ $labels.host }}"
+    summary = "High error rate ({{ $labels.status }}) for {{ $labels.page_type }}
+               on {{ $labels.host }}"
   }
 ```
 @[1]
