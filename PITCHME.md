@@ -4,6 +4,12 @@
 
 ## Our Setup at HC
 
-- one central server for collecting metrics, alerting, and dashboarding |
-- foo [http://prometheus.prod.hcg.cloud](http://prometheus.prod.hcg.cloud) bar |
-- foo http://grafana.prod.hcg.cloud bar |
+- one central server for collecting metrics, alerting, and dashboarding
+- http://prometheus.prod.hcg.cloud
+- http://grafana.prod.hcg.cloud
+
+---
+
+## Production Monitoring and On-Call
+
+foo
