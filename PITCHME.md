@@ -1,4 +1,5 @@
-![logo](assets/prometheus.png)
+![prometheus logo](assets/prometheus.png)
+![grafana logo](assets/grafana.png)
 
 ---
 
