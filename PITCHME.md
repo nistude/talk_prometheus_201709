@@ -56,3 +56,14 @@ ALERT RoutecontrolHcErrorRate
 @[4](duration)
 @[5-8](labels are used by alertmanager to route alerts)
 @[9-12](descriptive error message)
+
+---
+
+## Recording Rules for Expensive Aggregations
+
+```
+host_page_type:nginx_http_request_duration_seconds:rate2m_quantile90 =
+histogram_quantile(0.90,
+  sum(rate(nginx_http_request_duration_seconds_bucket[2m])) by (host, le, page_type))
+
+```
