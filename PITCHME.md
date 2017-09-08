@@ -8,13 +8,12 @@
   - `nginx_http_requests_total`
 - labels |
   - `{host="www.holidaycheck.ch",
-      instance="10.88.0.8:9146",
       instance_name="prod-opseng-routecontrolb-nfs0",
       job="nginx-request-metrics-ch",
       page_type="api public-profiles",
       status="304"}`
 - timeseries |
-  - metrics + labels |
+  - metrics + labels
 
 ---
 
