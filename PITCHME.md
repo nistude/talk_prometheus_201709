@@ -72,5 +72,5 @@ histogram_quantile(0.90,
 )
 
 ```
-
-+++?gist=91e2f106fd54293b5dd5c6222d1e9e0b
+@[1](new variable name)
+@[2-8](calculate 90th percentile request duration)
