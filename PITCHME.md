@@ -4,7 +4,7 @@
 
 ## Basic Building Blocks
 
-- metrics
+- metrics |
   - `nginx_http_requests_total`
 - labels |
   - `{host="www.holidaycheck.ch",
