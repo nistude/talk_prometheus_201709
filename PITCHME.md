@@ -12,4 +12,3 @@
 
 ## Production Monitoring and On-Call
 
-foo
