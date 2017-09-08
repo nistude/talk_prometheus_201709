@@ -94,3 +94,15 @@ ALERT UserflowService_OfferScraper_Down
 ```
 @[6](name of the team to alert)
 @[7](auto-link to container logs and Marathon UI)
+
+---
+
+## Querying Prometheus
+
+---
+
+## Exploring Metrics
+
+---
+
+## Dashboarding with Grafana
