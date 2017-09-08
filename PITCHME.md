@@ -2,6 +2,12 @@
 
 ---
 
+## Basic Building Blocks
+
+- metrics |
+  - foo |
+- timeseries |
+
 ## Our Setup at HC
 
 +++
