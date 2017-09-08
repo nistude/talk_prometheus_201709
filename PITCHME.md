@@ -67,3 +67,5 @@ histogram_quantile(0.90,
   sum(rate(nginx_http_request_duration_seconds_bucket[2m])) by (host, le, page_type))
 
 ```
+
++++?gist=91e2f106fd54293b5dd5c6222d1e9e0b
