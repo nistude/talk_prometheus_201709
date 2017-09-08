@@ -5,7 +5,7 @@
 ## Basic Building Blocks
 
 - metrics |
-  - foo |
+  - nginx_http_requests_total |
 - timeseries |
 
 ---
