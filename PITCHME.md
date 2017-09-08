@@ -55,4 +55,4 @@ ALERT RoutecontrolHcErrorRate
 @[2-3](alert condition)
 @[4](duration)
 @[5-8](labels are used by alertmanager to route alerts)
-@[9-11](descriptive error message)
+@[9-12](descriptive error message)
