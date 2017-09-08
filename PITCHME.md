@@ -64,7 +64,12 @@ ALERT RoutecontrolHcErrorRate
 ```
 host_page_type:nginx_http_request_duration_seconds:rate2m_quantile90 =
 histogram_quantile(0.90,
-  sum(rate(nginx_http_request_duration_seconds_bucket[2m])) by (host, le, page_type))
+  sum(
+    rate(
+      nginx_http_request_duration_seconds_bucket[2m]
+    )
+  ) by (host, le, page_type)
+)
 
 ```
 
