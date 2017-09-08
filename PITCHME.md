@@ -72,5 +72,25 @@ histogram_quantile(0.90,
 )
 
 ```
-@[1](new variable name)
+@[1](new time series)
 @[2-8](calculate 90th percentile request duration)
+
+---
+
+## More Alert Rule Love
+
+```
+ALERT UserflowService_OfferScraper_Down
+  IF sum(marathon_app_task_healthy{app="/userflow/offer-scraper"}) == 0
+  FOR 5m
+  LABELS {
+    severity = "warning",
+    team = "explorers",
+    service_name="/userflow/offer-scraper",
+  }
+  ANNOTATIONS {
+    summary = "/userflow/offer-scraper service is DOWN in GCE."
+  }
+```
+@[6](name of the team to alert)
+@[7](auto-link to container logs and Marathon UI)
