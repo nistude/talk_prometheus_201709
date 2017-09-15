@@ -6,14 +6,14 @@
 ## Basic Building Blocks
 
 - labels all the way down |
-  - `{host="www.holidaycheck.ch",  
-      instance_name="prod-opseng-routecontrolb-nfs0",  
-      job="nginx-request-metrics-ch",  
-      page_type="api public-profiles",  
+  - `{host="www.holidaycheck.ch",
+      instance_name="prod-opseng-routecontrolb-nfs0",
+      job="nginx-request-metrics-ch",
+      page_type="api public-profiles",
       status="304"}`
 - metric |
   - `__name__` label, e.g. `nginx_http_requests_total`
-- 1 timeseries per label set |
+- 1 time series per label set |
 
 ---
 
