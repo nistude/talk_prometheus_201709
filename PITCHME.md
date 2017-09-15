@@ -11,8 +11,8 @@
       job="nginx-request-metrics-ch",
       page_type="api public-profiles",
       status="304"}`
-- metric aka `__name__` label |
-  - `nginx_http_requests_total`
+- metric |
+  - `__name__` label, e.g. `nginx_http_requests_total`
 - 1 timeseries per label set |
 
 ---
